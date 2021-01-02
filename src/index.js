@@ -1,1 +1,3 @@
-console.log('test')
+import createPage from "/src/content.js";
+
+createPage();
