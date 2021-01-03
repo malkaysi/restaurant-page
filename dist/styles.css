@@ -42,6 +42,19 @@
     float: left;
 }
 
+.tabSelected{
+    background-color: white;
+    padding: 25px;
+    height: 500px;
+    width: 1000px;
+    margin-top: 0px;
+}
+
+.tabSelected:active{
+    background-color:rgb(92, 78, 60);
+    color: white;
+}
+
 #menuOne{
     background-color: white;
     padding: 25px;

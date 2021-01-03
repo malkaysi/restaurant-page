@@ -1,29 +1,14 @@
-const populateTabTwo = (() => {
-    /* const menu = document.querySelector('#menu');
-    const tabTwo = document.createElement('p');
+const populateTabTwo = () => {
+    const menu = document.querySelector('#menu');
+    const tabTwoText = document.createElement('p');
 
-    tabTwo.setAttribute('id', 'menuTwo')
+    tabTwoText.setAttribute('id', 'menuTwo')
+    tabTwoText.classList.add('tabSelected')
+    tabTwoText.textContent = "Test test test";
+    
+    menu.appendChild(tabTwoText);
 
-    tabTwo.textContent = "Test test test";
+};
 
-    menu.appendChild(tabTwo); */
 
-    const tabTwo = document.getElementById('tabTwoContent');
-
-    /* tabTwo.addEventListener('click', () => {
-        alert('test');
-    }); */
-
-    const test = () => {
-        tabTwo.addEventListener('click', () => {
-            alert('test');
-        });
-    }
-
-    return { test };
-
-})();
-
-const function1 = populateTabTwo.test();
-
-export { function1 }
+export default populateTabTwo;
