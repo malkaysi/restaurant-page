@@ -5,9 +5,9 @@
 .contentButton{
     position: relative;
     text-align: center;
-    margin-top: 300px;
-    vertical-align: center;
-
+    display: flex;
+    justify-content: center;
+    margin-right: 750px;
 }
 
 .image{
@@ -16,13 +16,16 @@
 }
 
 .button{
-    background-color:aquamarine;
+    background-color:rgb(92, 78, 60);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    height: 25;
+    font-size: larger;
+    font-weight:bold;
+    height: 25px;
     width: 100px;
-    padding: 70px 0px;
+    padding: 25px 15px;
     text-align: center;
+    color: rgb(255, 255, 255);
+
 }
 
 #tabOneContent{
@@ -35,4 +38,15 @@
 
 #tabThreeContent{
     float: left;
+}
+
+#menuOne{
+    background-color: white;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    height: 500px;
+    width: 1000px;
+    margin-left: 700px;
 }
