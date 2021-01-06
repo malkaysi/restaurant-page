@@ -5,8 +5,9 @@ const populateTabTwo = () => {
     tabTwoText.setAttribute('id', 'menuTwo')
     tabTwoText.classList.add('tabSelected')
     tabTwoText.textContent = "Test test test";
-    
+
     menu.appendChild(tabTwoText);
+
 
 };
 
