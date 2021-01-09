@@ -1,4 +1,4 @@
-const populateTabTwo = () => {
+/* const populateTabTwo = () => {
     const menu = document.querySelector('#menu');
     const tabTwoText = document.createElement('p');
 
@@ -12,4 +12,4 @@ const populateTabTwo = () => {
 };
 
 
-export default populateTabTwo;
+export default populateTabTwo; */

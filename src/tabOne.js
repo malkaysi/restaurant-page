@@ -1,4 +1,4 @@
-const tabOneText = document.createElement('p');
+/* const tabOneText = document.createElement('p');
 
 const populateTabOne = () => {
     const menu = document.querySelector('#menu');
@@ -13,4 +13,4 @@ const populateTabOne = () => {
 };
 
 
-export {populateTabOne, tabOneText};
+export {populateTabOne, tabOneText}; */
