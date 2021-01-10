@@ -1,5 +1,5 @@
 import createPage from "/src/content.js";
-import clearMenu from './clearMenu.js'
+// import clearMenu from './clearMenu.js'
 import popTab from './menuTabs.js'
 
 

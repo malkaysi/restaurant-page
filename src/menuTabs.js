@@ -17,10 +17,15 @@ const menuTabs = [
 
 const popTab = (tabValue) => {
     const menu = document.querySelector('#menu');
-    let tabObj = menuTabs[tabValue];
+
+    // If menu has a query child with a class of tabSelected, then remove it
+    if(document.querySelector('.tabSelected')){
+        menu.removeChild(menu.lastElementChild);
+    }
+    // let tabObj = menuTabs[tabValue];
     let tab = document.createElement('p')
     tab.classList.add('tabSelected')
-    tab.textContent = tabObj.text;
+    tab.textContent = menuTabs[tabValue].text;
 
     menu.appendChild(tab)
 
