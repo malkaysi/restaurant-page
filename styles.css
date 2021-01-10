@@ -1,3 +1,8 @@
+body {
+    background-image: "./src/resources/rst.jpg";
+    background-repeat: no-repeat;
+  }
+
 #content{
     display: flex;
     flex-direction: column;
