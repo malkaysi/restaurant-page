@@ -1,15 +1,19 @@
 import createPage from "/src/content.js";
-import populateTabTwo from "./tabTwo.js"
-import displayTabOne from "./tabOne.js"
+import clearMenu from './clearMenu.js'
+import popTab from './menuTabs.js'
+
 
 const menu = document.querySelector('#menu');
-const tabTwo = document.getElementById('tabTwoContent');
-
-/* const tabTwo = document.querySelector('#tabTwoContent');
-
-tabTwo.addEventListener('click', function1); */
+const tabs = document.querySelectorAll('div.button')
+let tabValue;
 
 
-tabTwo.addEventListener('click', () => {
-    populateTabTwo();
-});
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+        tabValue = parseInt(tab.id)
+        popTab(tabValue);
+    })
+})
+
+export default tabValue;
