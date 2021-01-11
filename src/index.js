@@ -1,7 +1,10 @@
+import createNav from './navbar.js'
 import createPage from "/src/content.js";
 import './styles.css';
-import popTab from './menuTabs.js'
+import {createMenu, popTab} from './menuTabs.js'
 
+
+createMenu();
 
 const menu = document.querySelector('#menu');
 const tabs = document.querySelectorAll('div.button')
@@ -15,5 +18,6 @@ tabs.forEach((tab) => {
         popTab(tabValue);
     })
 })
+
 
 export default tabValue;
