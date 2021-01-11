@@ -8,7 +8,27 @@ body {
     background-size: 100% 100%;
   }
 
-#content{
+  nav {
+      text-align: right;
+      margin-right: 75px;
+      margin-top: 40px;
+  }
+
+nav a {
+    text-align: center;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-family: 'Lucida Grande';
+    font-size: larger;
+}
+
+.active{
+    border-bottom: 1px solid #bbb;
+}
+
+  #content{
     display: flex;
     flex-direction: column;
     text-align: center;
