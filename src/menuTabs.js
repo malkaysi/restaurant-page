@@ -25,21 +25,21 @@ const createMenu = (() => {
     menu.id = 'menu';
 
     const tabContainer = document.createElement('div');
-    tabContainer.class = 'contentButton';
+    tabContainer.className = 'contentButton';
     tabContainer.id = 'content-button';
     
     const tabOne = document.createElement('div');
-    tabOne.class = "button";
+    tabOne.className = "button";
     tabOne.id = '0';
     tabOne.textContent = 'Appetizers';
 
     const tabTwo = document.createElement('div');
-    tabTwo.class = "button";
+    tabTwo.className = "button";
     tabTwo.id = '1';
     tabTwo.textContent = 'Lunch';
 
     const tabThree = document.createElement('div');
-    tabThree.class = "button";
+    tabThree.className = "button";
     tabThree.id = '2';
     tabThree.textContent = 'Dinner';
 

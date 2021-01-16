@@ -9,10 +9,16 @@ const createNav = (() => {
     let menu = document.createElement('a');
     let about = document.createElement('a');
 
-    nav.className = 'topnav';
-    home.href = '/home/';
-    menu.href = '/menu/';
-    about.href = '/about/';
+    // nav.className = 'topnav';
+    home.href = '#home';
+    home.textContent = 'Home';
+
+    menu.href = '#menu';
+    menu.textContent = 'Menu';
+
+    about.href = '#about';
+    about.textContent = 'About';
+
 
     body.appendChild(nav);
     nav.appendChild(home);
