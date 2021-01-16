@@ -1,3 +1,6 @@
+import css from './styles.css';
+
+
 const createNav = (() => {
 
     let body = document.querySelector('body')

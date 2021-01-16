@@ -1,3 +1,5 @@
+import css from './styles.css';
+
 const createPage = (() => {
     // const container = document.querySelector('#content');
     const container = document.createElement('div');

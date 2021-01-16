@@ -1,4 +1,7 @@
+import css from './styles.css';
 import tabValue from './index.js'
+
+
 
 const menuTabs = [
     {
@@ -15,7 +18,7 @@ const menuTabs = [
     }
 ];
 
-const createMenu = () => {
+const createMenu = (() => {
     
     let body = document.querySelector('body')
     const menu = document.createElement('div');
@@ -40,13 +43,14 @@ const createMenu = () => {
     tabThree.id = '2';
     tabThree.textContent = 'Dinner';
 
-    body.appendChild(tabContainer);
+    body.appendChild(menu);
+    menu.appendChild(tabContainer);
     tabContainer.appendChild(tabOne);
     tabContainer.appendChild(tabTwo);
     tabContainer.appendChild(tabThree);
 
 
-};
+})();
 
 
 const popTab = (tabValue) => {

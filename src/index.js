@@ -1,10 +1,10 @@
+import css from './styles.css';
 import createNav from './navbar.js'
 import createPage from "/src/content.js";
-import './styles.css';
 import {createMenu, popTab} from './menuTabs.js'
 
 
-createMenu();
+// createMenu();
 
 const menu = document.querySelector('#menu');
 const tabs = document.querySelectorAll('div.button')
