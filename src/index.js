@@ -4,7 +4,7 @@ import createPage from "/src/content.js";
 import { createMenu, popTab } from './menuTabs.js'
 
 
-const tabs = document.querySelectorAll('div.button')
+const tabs = document.querySelectorAll('button')
 let tabValue;
 
 popTab(0);

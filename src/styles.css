@@ -38,7 +38,7 @@ body {
 }
 .contentButton{
     text-align: center;
-    margin-right: 660px;
+    margin-right: 600px;
 }
 
 .image{
@@ -57,10 +57,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     font-weight:bold;
-    width: 100px;
+    width: 150px;
     padding: 25px 15px;
     color: rgb(255, 255, 255);
     float: left;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .button-clicked{
@@ -68,10 +71,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     font-weight:bold;
-    width: 100px;
+    width: 150px;
     padding: 25px 15px;
     color:rgb(92, 78, 60);
     float: left;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .tabSelected{

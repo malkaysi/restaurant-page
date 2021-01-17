@@ -28,17 +28,17 @@ const createMenu = (() => {
     tabContainer.className = 'contentButton';
     tabContainer.id = 'content-button';
     
-    const tabOne = document.createElement('div');
-    tabOne.className = "button";
+    const tabOne = document.createElement('button');
+    tabOne.className = "button-clicked";
     tabOne.id = '0';
     tabOne.textContent = 'Appetizers';
 
-    const tabTwo = document.createElement('div');
+    const tabTwo = document.createElement('button');
     tabTwo.className = "button";
     tabTwo.id = '1';
     tabTwo.textContent = 'Lunch';
 
-    const tabThree = document.createElement('div');
+    const tabThree = document.createElement('button');
     tabThree.className = "button";
     tabThree.id = '2';
     tabThree.textContent = 'Dinner';
