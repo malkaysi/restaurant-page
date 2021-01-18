@@ -7,8 +7,6 @@ const clearMenu = () => {
     console.log(tabOneText);
     menu.removeChild(tabOneText);
     
-    //menu.removeChild();
-
 
 };
 

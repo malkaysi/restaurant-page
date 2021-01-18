@@ -1,19 +1,79 @@
+import css from './styles.css';
 import tabValue from './index.js'
 
+
+
 const menuTabs = [
-    {
-        dom: document.createElement('p'),
-        text: "This is the menu <br> Item number One is delicious <br> The second dish is a salad app <br>The third dish is full of cheese"
-    },
-    {
-        dom: document.createElement('p'),
-        text: "Test test test"
-    },
-    {
-        dom: document.createElement('p'),
-        text: "23 menu item for tab 3"
-    }
-]
+        `7 &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><br>
+        8 &nbsp Cras sed ante ac tortor hendrerit sagittis. <br><br>
+        5 &nbsp Duis eu mauris ut orci sagittis faucibus mollis id enim. <br><br>
+        9 &nbsp Nulla fringilla massa pulvinar nulla mollis, non varius nisi commodo.<br><br>
+        5 &nbsp Nunc in leo nec ipsum gravida vulputate.<br><br>
+        7 &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><br>
+        8 &nbsp Cras sed ante ac tortor hendrerit sagittis. <br><br>
+        5 &nbsp Duis eu mauris ut orci sagittis faucibus mollis id enim. <br><br>
+        9 &nbsp  Nulla fringilla massa pulvinar nulla mollis, non varius nisi commodo.<br><br>
+        5 &nbsp Nunc in leo nec ipsum gravida vulputate.<br><br>
+        6 &nbsp  Proin consectetur tortor nec est pretium fringilla`,
+        `11 &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><br>
+        13 &nbsp Cras sed ante ac tortor hendrerit sagittis. <br><br>
+        9 &nbsp Duis eu mauris ut orci sagittis faucibus mollis id enim. <br><br>
+        9 &nbsp Nulla fringilla massa pulvinar nulla mollis, non varius nisi commodo.<br><br>
+        13 &nbsp Nunc in leo nec ipsum gravida vulputate.<br><br>
+        12 &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><br>
+        15 &nbsp Cras sed ante ac tortor hendrerit sagittis. <br><br>
+        14 &nbsp Duis eu mauris ut orci sagittis faucibus mollis id enim. <br><br>
+        18 &nbsp  Nulla fringilla massa pulvinar nulla mollis, non varius nisi commodo.<br><br>
+        12 &nbsp Nunc in leo nec ipsum gravida vulputate.<br><br>
+        8 &nbsp  Proin consectetur tortor nec est pretium fringilla`,
+        `17 &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><br>
+        16 &nbsp Cras sed ante ac tortor hendrerit sagittis. <br><br>
+        9 &nbsp Duis eu mauris ut orci sagittis faucibus mollis id enim. <br><br>
+        14 &nbsp Nulla fringilla massa pulvinar nulla mollis, non varius nisi commodo.<br><br>
+        22 &nbsp Nunc in leo nec ipsum gravida vulputate.<br><br>
+        25 &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><br>
+        20 &nbsp Cras sed ante ac tortor hendrerit sagittis. <br><br>
+        14 &nbsp Duis eu mauris ut orci sagittis faucibus mollis id enim. <br><br>
+        18 &nbsp  Nulla fringilla massa pulvinar nulla mollis, non varius nisi commodo.<br><br>
+        12 &nbsp Nunc in leo nec ipsum gravida vulputate.<br><br>
+        30 &nbsp  Proin consectetur tortor nec est pretium fringilla`
+];
+
+const createMenu = (() => {
+    
+    let body = document.querySelector('body')
+    const menu = document.createElement('div');
+    menu.id = 'menu';
+    menu.className = 'pageContent'
+
+    const tabContainer = document.createElement('div');
+    tabContainer.className = 'contentButton';
+    tabContainer.id = 'content-button';
+    
+    const tabOne = document.createElement('button');
+    tabOne.className = "button-clicked";
+    tabOne.id = '0';
+    tabOne.textContent = 'Appetizers';
+
+    const tabTwo = document.createElement('button');
+    tabTwo.className = "button";
+    tabTwo.id = '1';
+    tabTwo.textContent = 'Lunch';
+
+    const tabThree = document.createElement('button');
+    tabThree.className = "button";
+    tabThree.id = '2';
+    tabThree.textContent = 'Dinner';
+
+    body.appendChild(menu);
+    menu.appendChild(tabContainer);
+    tabContainer.appendChild(tabOne);
+    tabContainer.appendChild(tabTwo);
+    tabContainer.appendChild(tabThree);
+
+
+});
+
 
 const popTab = (tabValue) => {
     const menu = document.querySelector('#menu');
@@ -25,10 +85,10 @@ const popTab = (tabValue) => {
     // let tabObj = menuTabs[tabValue];
     let tab = document.createElement('p')
     tab.classList.add('tabSelected')
-    tab.textContent = menuTabs[tabValue].text;
+    tab.innerHTML = menuTabs[tabValue];
 
     menu.appendChild(tab)
 
 }
 
-export default popTab
+export {createMenu, popTab}
