@@ -1,6 +1,5 @@
 import css from './styles.css';
 import createNav from './navbar.js'
-import createPage from "/src/content.js";
 import { createMenu, popTab } from './menuTabs.js'
 import createAbout from './about.js'
 
@@ -12,15 +11,19 @@ const aboutNav = document.querySelector('#aboutNav')
 const body = document.querySelector('body');
 let tabValue;
 
-createPage();
 
 homeNav.addEventListener('click', () => {
-    body.removeChild(document.querySelector('.pageContent'))
-    createPage();
+    if(document.querySelector('.pageContent')){
+        body.removeChild(document.querySelector('.pageContent'));
+    }
+    
 });
 
 menuNav.addEventListener('click', () => {
-    body.removeChild(document.querySelector('.pageContent'))
+    if(document.querySelector('.pageContent')){
+        body.removeChild(document.querySelector('.pageContent'));
+    }
+
     createMenu();
     popTab(0);
 
@@ -41,7 +44,9 @@ menuNav.addEventListener('click', () => {
 });
 
 aboutNav.addEventListener('click', () => {
-    body.removeChild(document.querySelector('.pageContent'))
+    if(document.querySelector('.pageContent')){
+        body.removeChild(document.querySelector('.pageContent'));
+    }
     
     createAbout();
 });
