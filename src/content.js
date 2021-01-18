@@ -1,11 +1,10 @@
 import css from './styles.css';
 
 const createPage = (() => {
-    // const container = document.querySelector('#content');
     const container = document.createElement('div');
     const body = document.querySelector('body')
 
-    container.className = 'content';
+    container.className = 'pageContent';
     container.id = 'content'
 
     const header = document.createElement('h1');
@@ -18,6 +17,6 @@ const createPage = (() => {
     container.appendChild(header);
     container.appendChild(description);
 
-})();
+});
 
 export default createPage;
